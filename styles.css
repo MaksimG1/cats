@@ -5,6 +5,16 @@ body {
   width: 100vw;
   height: 100vh;
 }
+audio {
+  margin-left: 100px;
+  position: relative;
+  z-index: 10;
+}
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 200px;
+  height: 25px;
+}
 .menu {
   margin-top: 50px;
   padding: 0;
@@ -70,7 +80,10 @@ body {
   display: block;
   outline: 2px dotted darkkhaki;
 }
-
+.hidden {
+  display: block;
+  outline: 2px dotted darkkhaki;
+}
 .gif_bg {
   top: 0;
   left: 0;
