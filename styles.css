@@ -3,18 +3,17 @@
 }
 
 .menu {
-  margin: 0;
-  margin-left: 50px;
-
+  margin-top: 50px;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 .menu_item {
   margin-right: 50px;
-
+  text-align: center;
   position: relative;
-  width: 93px;
+  width: 193px;
 }
 .menu_item:hover {
   outline: 2px dotted darkkhaki;
@@ -40,15 +39,27 @@
   top: 100%;
 }
 .submenu_item {
+  width: 193px;
   padding: 5px;
   background-color: #14da2ba7;
   outline: solid rgb(0, 0, 0);
   font-style: italic;
   font-weight: bold;
 }
+.submenu_item > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.submenu_item:hover {
+  background-color: rebeccapurple;
+}
 .submenu_item a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+.submenu_item:hover > a {
+  color: WHITE;
 }
 
 .menu_item:hover .submenu {
